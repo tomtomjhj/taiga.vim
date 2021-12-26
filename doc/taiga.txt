@@ -1,0 +1,60 @@
+*taiga.txt*  A boring, high-contrast colorscheme.
+
+CONTENTS                                                                 *taiga*
+
+    1. Usage ..................................................... |taiga-usage|
+    2. Configuration ..................................... |taiga-configuration|
+    3. Customization ..................................... |taiga-customization|
+    4. License ................................................. |taiga-license|
+
+==============================================================================
+USAGE                                                              *taiga-usage*
+
+See |:colorscheme|.
+
+taiga.vim supports
+* `set background=dark` and `set background=light`
+* 256-colors and true colors (see 'termguicolors')
+
+==============================================================================
+CONFIGURATION                                              *taiga-configuration*
+
+*g:taiga_full_special_attrs_support*
+Whether the UI supports |highlight-guisp|.
+Default: `has('gui_running')`
+
+==============================================================================
+CUSTOMIZATION                                              *taiga-customization*
+
+See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
+
+==============================================================================
+LICENSE                                                          *taiga-license*
+
+The source code of taiga.vim is based on the Dracula theme for Vim
+(https://github.com/dracula/vim).
+>
+  The MIT License (MIT)
+
+  Copyright (c) 2016 Dracula Theme
+  Copyright (c) 2021 Jaehwang Jung
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+<
+vim:tw=78:ts=8:ft=help:norl:
