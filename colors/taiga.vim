@@ -370,8 +370,9 @@ hi! link helpHyperTextJump Underlined
 hi! link helpOption Underlined
 " }}}
 " Markdown: {{{
-hi! link mkdListItem TaigaKeyword
-hi! link mkdBlockquote String
+hi! link markdownCode String
+hi! link markdownCodeBlock String
+hi! link markdownHeadingDelimiter Keyword
 " }}}
 " Python: {{{
 hi! link pythonBuiltin TaigaIdentBuiltin
