@@ -345,6 +345,7 @@ hi! link TSVariableBuiltin TaigaIdentBuiltin
 " Plugins: {{{
 " nvim-cmp: {{{
 hi! CmpItemAbbrMatch guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
+hi! link CmpItemKind NONE
 " }}}
 " }}}
 
