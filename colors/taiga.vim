@@ -370,6 +370,9 @@ hi! link helpHyperTextEntry TaigaGreenHigh
 hi! link helpHyperTextJump Underlined
 hi! link helpOption Underlined
 " }}}
+" Lua: {{{
+hi! link luaFunction Keyword
+" }}}
 " Markdown: {{{
 hi! link markdownCode String
 hi! link markdownCodeBlock String
