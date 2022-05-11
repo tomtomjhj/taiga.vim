@@ -343,6 +343,9 @@ hi! link TSVariableBuiltin TaigaIdentBuiltin
 " }}}
 
 " Plugins: {{{
+" vim-fugitive: {{{
+hi! link FugitiveblameUncommitted TaigaSubtle
+" }}}
 " nvim-cmp: {{{
 hi! CmpItemAbbrMatch guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
 hi! link CmpItemKind NONE
