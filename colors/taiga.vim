@@ -346,6 +346,10 @@ hi! link TSVariableBuiltin TaigaIdentBuiltin
 " vim-fugitive: {{{
 hi! link FugitiveblameUncommitted TaigaSubtle
 " }}}
+" vim-sneak: {{{
+call s:h('Sneak', s:bg_high, s:tan, ['bold'])
+call s:h('SneakScope', s:bg_high, s:fg_high, ['bold'])
+" }}}
 " nvim-cmp: {{{
 hi! CmpItemAbbrMatch guifg=NONE ctermfg=NONE guibg=NONE ctermbg=NONE gui=bold cterm=bold
 hi! link CmpItemKind NONE
