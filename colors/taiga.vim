@@ -389,6 +389,14 @@ hi! link markdownHeadingDelimiter Keyword
 hi! link pythonBuiltin TaigaIdentBuiltin
 hi! link pythonExceptions NONE
 " }}}
+" sh: {{{
+hi! link shCommandSub NONE
+hi! link shArithmetic NONE
+hi! link shShellVariables NONE
+hi! link shSpecial NONE
+hi! link shSpecialDQ NONE
+hi! link shSpecialSQ NONE
+" }}}
 " Rust: {{{
 hi! link rustCommentLineDoc Comment
 hi! link rustMacro TaigaIdentBuiltin
