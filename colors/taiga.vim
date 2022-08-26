@@ -229,7 +229,7 @@ call s:h('CursorLine', s:none, s:bg_low2)
 hi! link Directory    TaigaKeyword
 call s:h('DiffAdd', s:none, s:green_bg)
 call s:h('DiffChange', s:none, s:bg_low1)
-call s:h('DiffDelete', s:red, s:bg_high)
+call s:h('DiffDelete', s:red)
 call s:h('DiffText', s:none, s:purple_bg)
 " EndOfBuffer
 " TermCursor
