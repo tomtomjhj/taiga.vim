@@ -132,6 +132,7 @@ function! s:h(scope, fg, ...) " bg, attr_list, special
         \ 'guibg=' . l:bg[0], 'ctermbg=' . l:bg[1],
         \ 'gui=' . l:attrs, 'cterm=' . l:attrs,
         \ 'guisp=' . l:special[0],
+        \ has('patch-8.2.0863') ? 'ctermul=' . l:special[1] : '',
         \]
 
   execute join(l:hl_string, ' ')
