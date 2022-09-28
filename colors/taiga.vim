@@ -9,7 +9,7 @@ endif
 
 let g:colors_name = 'taiga'
 
-let g:taiga_full_special_attrs_support = get(g:, 'taiga_full_special_attrs_support', has('gui_running'))
+let s:full_special_attrs_support = get(g:, 'taiga_full_special_attrs_support', 1)
 
 " Palette: {{{
 let s:none    = ['NONE', 'NONE']
@@ -116,12 +116,9 @@ function! s:h(scope, fg, ...) " bg, attr_list, special
   " If the UI does not have full support for special attributes (like underline and
   " undercurl) and the highlight does not explicitly set the foreground color,
   " make the foreground the same as the attribute color to ensure the user will
-  " get some highlight if the attribute is not supported. The default behavior
-  " is to assume that terminals do not have full support, but the user can set
-  " the global variable `g:taiga_full_special_attrs_support` explicitly if the
-  " default behavior is not desirable.
+  " get some highlight if the attribute is not supported.
   let l:special = get(a:, 3, ['NONE', 'NONE'])
-  if l:special[0] !=# 'NONE' && l:fg[0] ==# 'NONE' && !g:taiga_full_special_attrs_support
+  if l:special[0] !=# 'NONE' && l:fg[0] ==# 'NONE' && !s:full_special_attrs_support
     let l:fg[0] = l:special[0]
     let l:fg[1] = l:special[1]
   endif

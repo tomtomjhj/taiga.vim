@@ -20,8 +20,8 @@ taiga.vim supports
 CONFIGURATION                                              *taiga-configuration*
 
 *g:taiga_full_special_attrs_support*
-Whether the UI supports |highlight-guisp|.
-Default: `has('gui_running')`
+Whether the UI supports |highlight-guisp| or |highlight-ctermul|.
+Default: `1`
 
 ==============================================================================
 CUSTOMIZATION                                              *taiga-customization*
