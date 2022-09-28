@@ -386,9 +386,19 @@ hi! link markdownCode String
 hi! link markdownCodeBlock String
 hi! link markdownHeadingDelimiter Keyword
 " }}}
+" Ocaml: {{{
+hi! link ocamlModPath NONE
+hi! link ocamlFullMod NONE
+hi! link ocamlOperator Operator
+" }}}
 " Python: {{{
 hi! link pythonBuiltin TaigaIdentBuiltin
 hi! link pythonExceptions NONE
+" }}}
+" Rust: {{{
+hi! link rustCommentLineDoc Comment
+hi! link rustMacro TaigaIdentBuiltin
+hi! link rustModPath NONE
 " }}}
 " sh: {{{
 hi! link shCommandSub NONE
@@ -397,11 +407,6 @@ hi! link shShellVariables NONE
 hi! link shSpecial NONE
 hi! link shSpecialDQ NONE
 hi! link shSpecialSQ NONE
-" }}}
-" Rust: {{{
-hi! link rustCommentLineDoc Comment
-hi! link rustMacro TaigaIdentBuiltin
-hi! link rustModPath NONE
 " }}}
 " Tex: {{{
 hi! link texCmd TaigaIdentBuiltin
