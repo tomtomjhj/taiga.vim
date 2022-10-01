@@ -21,6 +21,7 @@ let s:gray_26 = ['#262626', 235]
 let s:gray_3a = ['#3a3a3a', 237]
 let s:gray_44 = ['#444444', 238]
 let s:gray_62 = ['#626262', 241]
+let s:gray_6c = ['#6c6c6c', 242]
 let s:gray_9e = ['#9e9e9e', 247]
 let s:gray_a8 = ['#a8a8a8', 248]
 let s:gray_af = ['#afafaf', 245]
@@ -51,6 +52,7 @@ if &background ==# 'dark'
   let s:fg         = s:gray_ee " 93%
   let s:fg_low1    = s:gray_d0 " 82%
   let s:fg_low2    = s:gray_bc " 74%
+  let s:fg_low3    = s:gray_a8
   let s:bg_high    = s:gray_00
   let s:bg         = s:gray_12 " 7%
   let s:bg_low1    = s:gray_1c " 11%
@@ -79,6 +81,7 @@ else " light
   let s:fg         = s:gray_12 " 7%
   let s:fg_low1    = s:gray_26
   let s:fg_low2    = s:gray_3a
+  let s:fg_low3    = s:gray_6c
   let s:bg_high    = s:gray_ff
   let s:bg         = s:gray_e4 " 89%
   let s:bg_low1    = s:gray_d7
@@ -295,7 +298,7 @@ if has('nvim')
   let g:terminal_color_4  = s:blue[0]
   let g:terminal_color_5  = s:pink_high[0]
   let g:terminal_color_6  = s:cyan_high[0]
-  let g:terminal_color_7  = s:fg[0]
+  let g:terminal_color_7  = s:fg_low3[0]
   let g:terminal_color_8  = s:selection[0]
   let g:terminal_color_9  = s:red[0]
   let g:terminal_color_10 = s:green_high[0]
@@ -303,7 +306,7 @@ if has('nvim')
   let g:terminal_color_12 = s:blue[0]
   let g:terminal_color_13 = s:pink_low[0]
   let g:terminal_color_14 = s:cyan_low[0]
-  let g:terminal_color_15 = s:fg_high[0]
+  let g:terminal_color_15 = s:fg[0]
 elseif has('terminal')
   let g:terminal_ansi_colors = [s:bg[0], s:red[0], s:green_low[0], s:khaki[0], s:blue[0], s:pink_high[0], s:cyan_high[0], s:fg[0], s:selection[0], s:red[0], s:green_high[0], s:orange[0], s:blue[0], s:pink_low[0], s:cyan_low[0], s:fg_high[0]]
 endif
