@@ -271,8 +271,8 @@ hi! link SpellBad TaigaErrorLine
 hi! link SpellCap TaigaWarnLine
 hi! link SpellLocal TaigaWarnLine
 hi! link SpellRare TaigaInfoLine
-call s:h('StatusLine', s:none, s:bg_low2, ['bold'])
-call s:h('StatusLineNC', s:none, s:bg_low1)
+call s:h('StatusLine', s:bg, s:fg_low1, ['bold'])
+call s:h('StatusLineNC', s:bg_high, s:selection)
 hi! link StatusLineTerm StatusLine
 hi! link StatusLineTermNC StatusLineNC
 hi! link TabLine PmenuSel
