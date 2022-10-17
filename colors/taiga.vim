@@ -331,16 +331,18 @@ hi! link DiagnosticUnderlineInfo TaigaInfoLine
 hi! link DiagnosticUnderlineHint TaigaHintLine
 " }}}
 
-" :h nvim-treesitter-highlights {{{
-hi! link TSConstBuiltin TaigaConstBuiltin
-hi! link TSStringRegex TaigaSpecial
-hi! link TSFuncBuiltin TaigaIdentBuiltin
-hi! link TSFuncMacro TaigaSpecial
-hi! link TSConstructor NONE
-hi! link TSAttribute TaigaSpecial
-hi! link TSNamespace NONE
-hi! link TSTypeBuiltin TaigaConstBuiltin
-hi! link TSVariableBuiltin TaigaIdentBuiltin
+" :h treesitter-highlight-groups {{{
+if has('nvim')
+  hi! link @constant.builtin TaigaConstBuiltin
+  hi! link @string.regex TaigaSpecial
+  hi! link @function.builtin TaigaIdentBuiltin
+  hi! link @function.macro TaigaSpecial
+  hi! link @constructor NONE
+  hi! link @attribute TaigaSpecial
+  hi! link @namespace NONE
+  hi! link @type.builtin TaigaConstBuiltin
+  hi! link @variable.builtin TaigaIdentBuiltin
+endif
 " }}}
 
 " Plugins: {{{
