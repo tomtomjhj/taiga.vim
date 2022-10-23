@@ -308,7 +308,7 @@ if has('nvim')
   let g:terminal_color_14 = s:cyan_low[0]
   let g:terminal_color_15 = s:fg[0]
 elseif has('terminal')
-  let g:terminal_ansi_colors = [s:bg[0], s:red[0], s:green_low[0], s:khaki[0], s:blue[0], s:pink_high[0], s:cyan_high[0], s:fg[0], s:selection[0], s:red[0], s:green_high[0], s:orange[0], s:blue[0], s:pink_low[0], s:cyan_low[0], s:fg_high[0]]
+  let g:terminal_ansi_colors = [s:bg[0], s:red[0], s:green_low[0], s:khaki[0], s:blue[0], s:pink_high[0], s:cyan_high[0], s:fg_low3[0], s:selection[0], s:red[0], s:green_high[0], s:orange[0], s:blue[0], s:pink_low[0], s:cyan_low[0], s:fg_high[0]]
 endif
 " }}}
 
