@@ -102,7 +102,7 @@ else " light
   let s:purple_bg  = ['#a897ba', 146] " 270°, 20%, 66%
   let s:pink_high  = ['#b8005c', 125] " 330°, 100%, 36%
   let s:pink_low   = ['#610542',  53] " 320°, 90%, 20%
-  let s:orange     = ['#ad5700', 130] " 30°, 100%, 34%
+  let s:orange     = ['#d78700', 130] " 38°, 100%, 42%
   let s:red        = ['#af0000', 124] " 0°, 100%, 34%
   let s:tan        = ['#8f673d',  94] " 30°, 40%, 40%
 endif
