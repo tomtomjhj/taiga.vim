@@ -332,7 +332,7 @@ hi! link DiagnosticUnderlineHint TaigaHintLine
 " }}}
 
 " :h treesitter-highlight-groups {{{
-if has('nvim')
+if has('nvim-0.8')
   hi! link @constant.builtin TaigaConstBuiltin
   hi! link @string.regex TaigaSpecial
   hi! link @function.builtin TaigaIdentBuiltin
