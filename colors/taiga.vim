@@ -2,9 +2,6 @@ if exists('g:colors_name')
   " NOTE: This does not restore default highlights (e.g. htmlBold). It only
   " restores default links...
   hi clear
-  if exists('g:syntax_on')
-    syntax reset
-  endif
 endif
 
 let g:colors_name = 'taiga'
