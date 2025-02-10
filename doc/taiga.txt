@@ -26,7 +26,7 @@ Default: `1`
 ==============================================================================
 CUSTOMIZATION                                              *taiga-customization*
 
-See https://gist.github.com/romainl/379904f91fa40533175dfaec4c833f2f
+See https://github.com/vim/colorschemes/wiki/How-to-override-a-colorscheme%3F
 
 ==============================================================================
 LICENSE                                                          *taiga-license*

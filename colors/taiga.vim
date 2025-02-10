@@ -178,7 +178,7 @@ hi! link Boolean TaigaLiteral
 hi! link Float TaigaLiteral
 
 hi! clear Identifier
-hi! link Function NONE
+call s:h('Function', s:none, s:none)
 
 hi! link Statement TaigaKeyword
 hi! link Conditional TaigaKeyword
@@ -194,7 +194,7 @@ hi! link Define TaigaKeyword
 hi! link Macro TaigaKeyword
 hi! link PreCondit TaigaKeyword
 
-hi! clear Type
+call s:h('Type', s:none, s:none)
 hi! link StorageClass TaigaSubKeyword
 hi! link Structure TaigaKeyword
 hi! link Typedef TaigaKeyword
@@ -309,6 +309,7 @@ elseif has('terminal')
 endif
 " }}}
 
+" TODO: check new nvim hl groups
 " :h lsp-highlight {{{
 hi! link LspReferenceText TaigaSelection
 hi! link LspReferenceRead TaigaSelection
